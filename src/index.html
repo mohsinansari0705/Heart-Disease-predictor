@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Disease Predictor</title>
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="images/gc_logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sidebar_style.css" />
+  </head>
+
+  <body>
+    <!-- ----- Navbar ----- -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img id="logo" src="images/gc_logo.png" alt="Gray Code" />
+      </div>
+      
+      <h1 class="navbar-title">
+        <a href="https://github.com/mohsinansari0705/Heart-Disease-predictor/blob/main/README.md" target="_blank">Heart Disease Predictor</a>
+      </h1>
+      
+      <div class="admin">
+        <a href="https://github.com/mohsinansari0705/" target="_blank">
+          <img id="profile" src="images/groot_profile.png" alt="Profile photo" />
+          <span class="admin-text">mohsinansari0705</span>
+        </a>
+      </div>
+    </nav>
+    <!-- ----- /Navbar ----- -->
+
+    <!-- ----- Sidebar ----- -->
+    <div id="sidebar">
+      <div class="sidebar-header">
+        <button id="menu-toggle" aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <span id="sidebar-title">Navigation</span>
+      </div>
+
+      <div class="sidebar-buttons">
+        <button id="view-data">View Source Data</button>
+        <button id="view-dataset">About Dataset</button>
+        <button id="view-notebook">View Jupyter Notebook</button>
+        <button id="view-metrics">View Evaluation Metrics</button>
+        <button id="view-details">Project Details</button>
+      </div>
+    </div>
+    <!-- ----- /Sidebar ----- -->
+
+    <!-- ----- Modal Template ----- -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+      <div id="modal-container" class="modal-container">
+        <div class="modal-header">
+          <h2 id="modal-title">Modal Title</h2>
+          <button id="modal-close" class="modal-close-btn" aria-label="Close modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div id="modal-content" class="modal-content">
+          <!-- Dynamic content will be loaded here -->
+        </div>
+      </div>
+    </div>
+    <!-- ----- /Modal Template ----- -->
+
+    <!-- ----- Main Content ----- -->
+    <main>
+      <!-- Content will be dynamically generated -->
+      <div id="input-container"></div>
+
+      <div id="loader" class="hidden">
+        <div class="spinner"></div>
+        <p>Predicting...</p>
+      </div>
+
+      <div id="result" class="hidden">
+        <h2>Prediction Result</h2>
+        <p id="prediction-text"></p>
+      </div>
+    </main>
+    <!-- ----- /Main Content ----- -->
+
+    <script src="script.js"></script>
+    <script src="modal_script.js"></script>
+  </body>
+</html>
