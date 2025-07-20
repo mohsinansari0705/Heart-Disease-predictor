@@ -2,7 +2,7 @@
 
 A comprehensive machine learning web application that predicts the likelihood of heart disease based on user-provided health metrics. Built with HTML5, CSS3, JavaScript, and powered by a trained logistic regression model.
 
-[Use Heart-Disease Predictor here 👆](https://github.com/mohsinansari0705/Heart-Disease-predictor)
+[Use Heart-Disease Predictor here 👆](https://graycode-heartdisease-predictor.vercel.app/)
 
 ![Project UI](src/images/project_UI.png)
 
