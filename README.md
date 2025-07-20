@@ -2,6 +2,8 @@
 
 A comprehensive machine learning web application that predicts the likelihood of heart disease based on user-provided health metrics. Built with HTML5, CSS3, JavaScript, and powered by a trained logistic regression model.
 
+![Use this tool here](https://github.com/mohsinansari0705/Heart-Disease-predictor)
+
 ![Project UI](src/images/project_UI.png)
 
 ## Features
@@ -16,7 +18,7 @@ A comprehensive machine learning web application that predicts the likelihood of
 
 ## Tech Stack
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Frontend**: HTML, CSS, JavaScript
 - **Machine Learning**: Python, Scikit-learn, Pandas, NumPy
 - **Data Analysis**: Jupyter Notebooks, Matplotlib, Seaborn
 - **Dataset**: Cleveland Heart Disease Dataset (UCI ML Repository)
@@ -74,9 +76,6 @@ The application includes many information buttons:
    ```bash
    # Using Python
    python -m http.server 8000
-   
-   # Using Node.js
-   npx serve .
    ```
 
 4. **Access the application:**
@@ -140,7 +139,7 @@ The application uses the **Cleveland Heart Disease Dataset** from the UCI Machin
 
 ## Important Disclaimer
 
-⚠️ **Medical Disclaimer**: This application is for educational and research purposes only. The predictions should not replace professional medical consultation, diagnosis, or treatment. Always consult with qualified healthcare providers for medical advice.
+⚠️ **Medical Disclaimer**: This application is designed for educational and research purposes only. The predictions generated should never replace professional medical consultation, diagnosis, or treatment. Always consult with qualified healthcare providers for accurate medical advice and proper health assessments.
 
 ## Contributing
 
@@ -156,7 +155,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Developer
 
-**Mohsin Ansari** - Machine Learning & Agentic AI  
+**Mohsin Ansari** - Machine Learning & Agentic AI Specialist
 [![GitHub](https://img.shields.io/badge/GitHub-mohsinansari0705-blue?style=flat&logo=github)](https://github.com/mohsinansari0705/)  
 [![Project](https://img.shields.io/badge/Project-Heart_Disease_Predictor-green?style=flat&logo=github)](https://github.com/mohsinansari0705/Heart-Disease-predictor)
 
@@ -166,3 +165,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Kaggle community for data preprocessing and insights
 - Medical professionals who contributed to the original data collection
 - Open source community for tools and libraries used in this project
+
+### ⭐ If you found this project helpful, please consider giving it a star!
