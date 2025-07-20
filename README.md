@@ -2,7 +2,7 @@
 
 A comprehensive machine learning web application that predicts the likelihood of heart disease based on user-provided health metrics. Built with HTML5, CSS3, JavaScript, and powered by a trained logistic regression model.
 
-![Use this tool here](https://github.com/mohsinansari0705/Heart-Disease-predictor)
+[Use Heart-Disease Predictor here 👆](https://github.com/mohsinansari0705/Heart-Disease-predictor)
 
 ![Project UI](src/images/project_UI.png)
 
@@ -155,7 +155,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Developer
 
-**Mohsin Ansari** - Machine Learning & Agentic AI Specialist
+**Mohsin Ansari** - Machine Learning & Agentic AI Specialist  
 [![GitHub](https://img.shields.io/badge/GitHub-mohsinansari0705-blue?style=flat&logo=github)](https://github.com/mohsinansari0705/)  
 [![Project](https://img.shields.io/badge/Project-Heart_Disease_Predictor-green?style=flat&logo=github)](https://github.com/mohsinansari0705/Heart-Disease-predictor)
 
