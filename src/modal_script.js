@@ -71,8 +71,9 @@ function initializeSidebarButtons() {
     }
   });
 }
+// ----- /Sidebar Button Content -----
 
-// ----- Viwe Source Data ------
+// ----- View Source Data ------
 function getSourceDataContent() {
   return `
     <h3>Heart Disease Classification Dataset</h3>
@@ -302,7 +303,7 @@ function getDatasetContent() {
           <td>12</td>
           <td><strong>ca</strong></td>
           <td>Number of major vessels (0-3) colored by fluoroscopy</td>
-          <td>0, 1, 2, 3</td>
+          <td>0, 1, 2, 3, 4</td>
         </tr>
         <tr>
           <td>13</td>
@@ -334,7 +335,7 @@ function getDatasetContent() {
       <li>Total samples: 303</li>
       <li>Features: 13</li>
       <li>Missing values: None</li>
-      <li>Class distribution: Balanced (approximately 50-50)</li>
+      <li>Class distribution: Balanced (approximately 54.4-45.5)</li>
     </ul>
   `;
 }
@@ -353,7 +354,7 @@ function getNotebookContent() {
       </div>
       <div id="notebook-content" class="notebook-content">
         <iframe 
-          src="https://nbviewer.jupyter.org/github/mohsinansari0705/Heart-Disease-predictor/blob/main/heart%20disease%20classification/end_to_end_heart_disease_classification_tuet.ipynb" 
+          src="https://nbviewer.jupyter.org/github/mohsinansari0705/Heart-Disease-predictor/blob/main/heart%20disease%20classification/end_to_end_heart_disease_classification_tuet.ipynb?flush_cache=true" 
           width="100%" 
           height="700px" 
           frameborder="0"
@@ -383,22 +384,22 @@ function getMetricsContent() {
       <tbody>
         <tr>
           <td>Accuracy</td>
-          <td>85.2%</td>
+          <td>88.52%</td>
           <td>Overall correct predictions</td>
         </tr>
         <tr>
           <td>Precision</td>
-          <td>87.1%</td>
+          <td>82.15%</td>
           <td>True positive rate among positive predictions</td>
         </tr>
         <tr>
           <td>Recall</td>
-          <td>83.8%</td>
+          <td>92.72%</td>
           <td>True positive rate among actual positives</td>
         </tr>
         <tr>
           <td>F1-Score</td>
-          <td>85.4%</td>
+          <td>87.05%</td>
           <td>Harmonic mean of precision and recall</td>
         </tr>
       </tbody>
@@ -406,18 +407,18 @@ function getMetricsContent() {
     
     <h3>Cross-Validation Results</h3>
     <ul>
-      <li><strong>5-Fold CV Accuracy:</strong> 84.7% ± 3.2%</li>
+      <li><strong>5-Fold CV Accuracy:</strong> 84.79% ± 3.7%</li>
       <li><strong>Consistency Score:</strong> High (low variance across folds)</li>
       <li><strong>Overfitting Check:</strong> Minimal (train vs. validation gap < 2%)</li>
     </ul>
     
     <h3>Feature Importance</h3>
     <ol>
-      <li>Chest Pain Type (cp) - 18.3%</li>
-      <li>Maximum Heart Rate (thalach) - 15.7%</li>
-      <li>Exercise Induced Angina (exang) - 14.2%</li>
-      <li>ST Depression (oldpeak) - 12.9%</li>
-      <li>Age - 11.8%</li>
+      <li>Sex (sex) - 18.0%</li>
+      <li>Chest Pain Type (cp) - 13.4%</li>
+      <li>Thalium stress result (thal) - 13.9%</li>
+      <li>Exercise Induced Angina (exang) - 12.5%</li>
+      <li>ST Depression (oldpeak) - 11.4%</li>
     </ol>
     
     <h3>Confusion Matrix</h3>
@@ -432,13 +433,13 @@ function getMetricsContent() {
       <tbody>
         <tr>
           <td><strong>Actual: No Disease</strong></td>
-          <td>42</td>
-          <td>7</td>
+          <td>25</td>
+          <td>4</td>
         </tr>
         <tr>
           <td><strong>Actual: Disease</strong></td>
-          <td>8</td>
-          <td>43</td>
+          <td>3</td>
+          <td>29</td>
         </tr>
       </tbody>
     </table>
@@ -468,7 +469,7 @@ function getProjectDetailsContent() {
     <ul>
       <li><strong>Data Science:</strong> Python, Pandas, NumPy, Scikit-learn</li>
       <li><strong>Visualization:</strong> Matplotlib, Seaborn</li>
-      <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
       <li><strong>Development:</strong> Jupyter Notebooks, Git</li>
     </ul>
     
@@ -506,5 +507,3 @@ function getProjectDetailsContent() {
   `;
 }
 // ----- /Project Details -----
-
-// ----- /Sidebar Button Content -----
