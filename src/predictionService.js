@@ -1,6 +1,6 @@
 class PredictionService {
   constructor() {
-    this.apiUrl = '/api/index';
+    this.apiUrl = '/api/predict';
   }
 
   async makePrediction(userInputs) {
