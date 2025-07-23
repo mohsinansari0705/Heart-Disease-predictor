@@ -23,6 +23,7 @@ class handler(BaseHTTPRequestHandler):
 
             current_dir = os.path.dirname(os.path.abspath(__file__))
             project_root = os.path.dirname(current_dir)
+            
             model_path = os.path.join(project_root, 'heart_disease_classification', 'model', 'log_reg_model.pkl')
             
             if not os.path.exists(model_path):
