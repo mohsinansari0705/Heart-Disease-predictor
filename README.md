@@ -84,12 +84,15 @@ The application includes many information buttons:
 
 ```
 Heart-Disease-predictor/
+├── api/
+│   └── predict.py                 # Serverless function
 ├── src/                           # Frontend application
 │   ├── index.html                 # Main web interface
 │   ├── style.css                  # Core styling and responsive design
 │   ├── sidebar_style.css          # Sidebar and modal styling
 │   ├── script.js                  # Main application logic
 │   ├── modal_script.js            # Modal functionality and content
+│   ├── predictionService.js       # Predict Heart Disease
 │   └── images/                    # Project assets
 │       ├── gc_logo.png            # Application logo
 │       ├── groot_profile.png      # Developer profile image
@@ -99,7 +102,9 @@ Heart-Disease-predictor/
 │   ├── data/                      # Dataset files
 │   ├── model/                     # Trained model files
 │   └── requirements.yaml          # Python dependencies
-└── README.md                      # Project documentation
+├── README.md                      # Project documentation
+├── requirements.txt               # Python dependencies
+└── vercel.json                    # Vercel configuration
 ```
 
 ## Dataset Information
