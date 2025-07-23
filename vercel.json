@@ -1,12 +1,7 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/src/$1"
-    },
-    {
-      "source": "/",
-      "destination": "/src/index.html"
+  "functions": {
+    "api/predict.py": {
+      "runtime": "python3.9"
     }
-  ]
+  }
 }
