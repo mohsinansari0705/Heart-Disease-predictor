@@ -484,20 +484,25 @@ function getProjectDetailsContent() {
     
     <h3>Project Structure</h3>
     <pre><code>Heart-Disease-predictor/
-├── src/                   # Frontend application
-│   ├── index.html         # Main web interface
-│   ├── style.css          # Styling and responsive design
-│   ├── sidebar_style.css  # Sidebar design
-│   ├── script.js          # Interactive functionality
-│   ├── modal_script.js    # Modal functionality
-│   └── images/            # Project assets
+├── api/
+│   └── predict.py              # Serverless function
+├── src/                        # Frontend application
+│   ├── index.html              # Main web interface
+│   ├── style.css               # Styling and responsive design
+│   ├── sidebar_style.css       # Sidebar design
+│   ├── script.js               # Interactive functionality
+│   ├── modal_script.js         # Modal functionality
+│   ├── predictionService.js    # Predict Heart Disease
+│   └── images/                 # Project assets
 ├── heart disease classification/
-│   ├── *.ipynb            # Jupyter notebooks
-│   ├── data/              # Dataset files
-│   ├── model/             # Trained model files
-│   └── requirements.yaml  # Dependencies
-└── README.md              # Project documentation</code></pre>
-    
+│   ├── *.ipynb                 # Jupyter notebooks
+│   ├── data/                   # Dataset files
+│   ├── model/                  # Trained model files
+│   └── requirements.yaml       # Dependencies
+├── README.md                   # Project documentation
+├── requirements.txt            # Python dependencies
+└── vercel.json                 # Vercel configuration</code></pre>
+
     <h3>Developer</h3>
     <p><strong>Mohsin Ansari</strong> - Machine Learning & Agentic AI</p>
     <div style="margin-top: 1.5rem;">
