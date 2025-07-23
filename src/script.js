@@ -147,7 +147,7 @@ const inputs = [
 
 class HeartDiseasePredictor {
   constructor() {
-    this.currentStep = 0;
+    this.currentStep = -1;
     this.userInputs = {};
     this.isProcessing = false;
     
@@ -178,6 +178,11 @@ class HeartDiseasePredictor {
   }
 
   renderInput() {
+    if(this.currentStep === -1) {
+      this.renderWelcomeScreen();
+      return;
+    }
+
     if(this.currentStep >= inputs.length) {
       this.makePrediction();
       return;
@@ -247,6 +252,75 @@ class HeartDiseasePredictor {
     `;
 
     this.bindInputEvents();
+  }
+
+  renderWelcomeScreen() {
+    this.inputContainer.innerHTML = `
+      <div class="welcome-screen">
+        <div class="welcome-header">
+          <div class="welcome-icon">🫀</div>
+          <h2>Heart Disease Risk Assessment</h2>
+        </div>
+        
+        <div class="welcome-description">
+          <p>This tool uses <strong>Machine Learning</strong> to assess your risk of heart disease based on various health indicators.</p>
+          
+          <div class="assessment-info">
+            <div class="info-item">
+              <span class="info-icon">📋</span>
+              <span>13 health-related questions</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">⏱️</span>
+              <span>Takes about 2-3 minutes</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🔒</span>
+              <span>Your data is processed locally and securely</span>
+            </div>
+          </div>
+          
+          <div class="disclaimer">
+            <p><strong>Important:</strong> This assessment is for informational purposes only and should not replace professional medical advice. Always consult with a healthcare provider for proper diagnosis and treatment.</p>
+          </div>
+        </div>
+        
+        <div class="welcome-actions">
+          <button id="start-assessment-btn" class="btn btn-primary">
+            Start Assessment
+          </button>
+        </div>
+      </div>
+    `;
+
+    this.bindWelcomeEvents();
+  }
+
+  bindWelcomeEvents() {
+    const startButton = document.getElementById("start-assessment-btn");
+    
+    if(startButton) {
+      startButton.addEventListener("click", () => this.startAssessment());
+    }
+    
+    // Allow Enter key to start assessment
+    document.addEventListener("keypress", (e) => {
+      if (e.key === "Enter" && this.currentStep === -1 && !this.isProcessing) {
+        this.startAssessment();
+      }
+    });
+  }
+
+  startAssessment() {
+    if(this.isProcessing) return;
+    
+    this.currentStep = 0;
+    
+    this.inputContainer.style.opacity = '0';
+    setTimeout(() => {
+      this.renderInput();
+      this.inputContainer.style.opacity = '1';
+    }, 150);
   }
 
   bindInputEvents() {
@@ -323,10 +397,15 @@ class HeartDiseasePredictor {
   }
 
   goBack() {
-    if(this.isProcessing || this.currentStep <= 0) return;
-    
-    this.currentStep--;
-    delete this.userInputs[inputs[this.currentStep].id];
+    if(this.isProcessing) return;
+
+    if(this.currentStep <= 0) {
+      this.currentStep = -1;
+      this.userInputs = {};
+    } else {
+      this.currentStep--;
+      delete this.userInputs[inputs[this.currentStep].id];
+    }
     
     this.inputContainer.style.opacity = '0';
     setTimeout(() => {
