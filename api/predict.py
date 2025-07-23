@@ -5,8 +5,7 @@ import os
 
 def handler(request):
     try:
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        model_path = os.path.join(current_dir, '..', 'heart_disease_classification', 'model', 'log_reg_model.pkl')
+        model_path = os.path.join(os.path.dirname(__file__), 'model', 'log_reg_model.pkl')
 
         if not os.path.exists(model_path):
             return {
