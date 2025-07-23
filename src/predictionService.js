@@ -1,6 +1,6 @@
 class PredictionService {
   constructor() {
-    this.apiUrl = 'https://graycode-heartdisease-predictor.vercel.app/api/predict';
+    this.apiUrl = '/api/predict';
   }
 
   async makePrediction(userInputs) {
