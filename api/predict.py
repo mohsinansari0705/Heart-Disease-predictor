@@ -14,7 +14,10 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         
         try:
-            model_path = os.path.join(os.path.dirname(__file__), '..', 'heart disease classification', 'model', 'log_reg_model.pkl')
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            project_root = os.path.dirname(current_dir)
+            model_path = os.path.join(project_root, 'heart_disease_classification', 'model', 'log_reg_model.pkl')
+            
             with open(model_path, 'rb') as f:
                 model = pickle.load(f)
             
