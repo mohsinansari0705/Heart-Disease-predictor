@@ -19,7 +19,6 @@ class PredictionService {
       }
 
       const result = await response.json();
-      
       if(!result.success) {
         throw new Error(result.error || 'Prediction failed');
       }
