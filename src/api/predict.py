@@ -18,7 +18,7 @@ def handler(request):
             model = pickle.load(f)
 
         body = request.get_json()
-        features = [
+        features_array = [[
             float(body['age']),
             float(body['sex']),
             float(body['cp']),
@@ -32,9 +32,9 @@ def handler(request):
             float(body['slope']),
             float(body['ca']),
             float(body['thal'])
-        ]
+        ]]
 
-        features_array = np.array([features])
+        # features_array = np.array([features])
         prediction = model.predict(features_array)[0]
         probabilities = model.predict_proba(features_array)[0]
 
