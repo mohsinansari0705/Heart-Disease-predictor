@@ -484,24 +484,28 @@ function getProjectDetailsContent() {
     
     <h3>Project Structure</h3>
     <pre><code>Heart-Disease-predictor/
-├── api/
-│   └── predict.py              # Serverless function
-├── src/                        # Frontend application
-│   ├── index.html              # Main web interface
-│   ├── style.css               # Styling and responsive design
-│   ├── sidebar_style.css       # Sidebar design
-│   ├── script.js               # Interactive functionality
-│   ├── modal_script.js         # Modal functionality
-│   ├── predictionService.js    # Predict Heart Disease
-│   └── images/                 # Project assets
-├── heart disease classification/
-│   ├── *.ipynb                 # Jupyter notebooks
-│   ├── data/                   # Dataset files
-│   ├── model/                  # Trained model files
-│   └── requirements.yaml       # Dependencies
-├── README.md                   # Project documentation
-├── requirements.txt            # Python dependencies
-└── vercel.json                 # Vercel configuration</code></pre>
+├── api/                           # Serverless function folder
+│   ├── predict.py                 # Serverless function
+│   └── model/                     # Model folder
+│       └── log_reg_model.pkl      # Trained model
+├── src/                           # Frontend application
+│   ├── index.html                 # Main web interface
+│   ├── style.css                  # Core styling and responsive design
+│   ├── sidebar_style.css          # Sidebar and modal styling
+│   ├── script.js                  # Main application logic
+│   ├── modal_script.js            # Modal functionality and content
+│   ├── predictionService.js       # Predict Heart Disease
+│   ├── requirements.txt           # Project dependencies
+│   └── images/                    # Project assets
+│       ├── gc_logo.png            # Application logo
+│       ├── groot_profile.png      # Developer profile image
+│       └── project_UI.png         # Project screenshot
+├── heart disease classification/  # Machine Learning components
+│   ├── *.ipynb                    # Jupyter notebooks
+│   └── data/                      # Dataset files
+├── README.md                      # Project documentation
+├── requirements.txt               # Python dependencies
+└── vercel.json                    # Vercel configuration</code></pre>
 
     <h3>Developer</h3>
     <p><strong>Mohsin Ansari</strong> - Machine Learning & Agentic AI</p>
