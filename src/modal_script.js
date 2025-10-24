@@ -192,7 +192,7 @@ function getSourceDataContent() {
     <p><strong>Total Records:</strong> 303 patients</p>
     <p><strong>Target Variable:</strong> Heart disease presence (0 = no disease, 1 = disease)</p>
     
-    <a href="../heart disease classification/data/heart_disease.csv" class="btn" target="_blank">Download Dataset</a>
+    <a href="../heart_disease_classification/data/heart_disease.csv" class="btn" target="_blank">Download Dataset</a>
   `;
 }
 // ----- /View Source Data -----
@@ -349,12 +349,12 @@ function getNotebookContent() {
         <h3>Heart Disease Classification - Complete Analysis</h3>
         <p>end_to_end_heart_disease_classification.ipynb</p>
         <div class="notebook-actions">
-          <a href="https://github.com/mohsinansari0705/Heart-Disease-predictor/blob/main/heart%20disease%20classification/end_to_end_heart_disease_classification_tuet.ipynb" class="btn" target="_blank">View on GitHub</a>
+          <a href="https://github.com/mohsinansari0705/Heart-Disease-predictor/blob/main/heart_disease_classification/end_to_end_heart_disease_classification.ipynb" class="btn" target="_blank">View on GitHub</a>
         </div>
       </div>
       <div id="notebook-content" class="notebook-content">
         <iframe 
-          src="https://nbviewer.jupyter.org/github/mohsinansari0705/Heart-Disease-predictor/blob/main/heart%20disease%20classification/end_to_end_heart_disease_classification_tuet.ipynb?flush_cache=true" 
+          src="https://nbviewer.jupyter.org/github/mohsinansari0705/Heart-Disease-predictor/blob/main/heart_disease_classification/end_to_end_heart_disease_classification.ipynb?flush_cache=true" 
           width="100%" 
           height="700px" 
           frameborder="0"
