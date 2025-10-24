@@ -192,7 +192,7 @@ function getSourceDataContent() {
     <p><strong>Total Records:</strong> 303 patients</p>
     <p><strong>Target Variable:</strong> Heart disease presence (0 = no disease, 1 = disease)</p>
     
-    <a href="../heart_disease_classification/data/heart_disease.csv" class="btn" target="_blank">Download Dataset</a>
+    <a href="https://cdn.jsdelivr.net/gh/mohsinansari0705/Heart-Disease-predictor/heart_disease_classification/data/heart_disease.csv" class="btn" download>Download Dataset</a>
   `;
 }
 // ----- /View Source Data -----
