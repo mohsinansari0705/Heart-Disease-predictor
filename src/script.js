@@ -442,8 +442,8 @@ class HeartDiseasePredictor {
     this.loader.classList.remove('hidden');
     
     try {
-      // const result = await this.predictionService.makePrediction(this.userInputs);
-      const result = this.predict(); // Use rule-based prediction instead of API call
+      const result = await this.predictionService.makePrediction(this.userInputs);
+      // const result = this.predict(); // Use rule-based prediction instead of API call
         
       setTimeout(() => {
         this.showResult(result.prediction, result.confidence, result);
